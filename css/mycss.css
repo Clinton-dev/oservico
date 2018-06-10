@@ -1,0 +1,57 @@
+@media screen and (max-width:992px){
+    .col-md-4, .col-md-8, .col-xs-9, .col-xs-3, {
+      width: 100%;
+    }.card{
+      width:80%;
+    }
+  }#main, .container{
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  .card{
+    height: 95%;
+    
+  }.footer.ul{
+      display: block;
+  }
+
+  #navigation a {
+    color :#eee;
+  }
+
+  #myNavbar li {
+    text-align: right;
+    font-size: 17px;
+  }
+
+  #headerWrapper{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    height:500px;
+    background-image: url(../img/banner.jpg);
+    background-size: 100% 450px;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .text {
+    border: 1px solid #080808;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #080808;
+    float: right;
+    padding: 30px;
+    margin-top: 25px;
+    margin-right: 15px;
+  }
+
+ .col-md-4 {
+    border: 1px solid #ccc;
+    border-color: #ccc;
+    box-shadow: 5px 5px 3px grey;
+    margin: 5px;
+
+  }
