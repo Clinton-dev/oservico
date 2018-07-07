@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Oservi| home of transcribers</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="navbar">
+<div class="logo">
+<span><a href="index.html">Oservi</a></span>
+</div>
+<div class="menu">
+<div class="dropdown">
+<a class="dropbtn "><img src="images/menu.png"></a>
+<div class="dropdown-content">
+<a href="index.html">home</a>
+<a href="about.html">about</a>
+<a href="services.html">services</a>
+<a href="price.html">prices</a>
+<a href="contact.html">info@oservi.com</a>
+<a href="http://blog.orservi.com">blog</a>
+</div>
+</div>
+
+<ul class="men" id="nav" >
+<li><a href="index.html"><img src="images/bar/home.png"/>home</a></li>
+<li><a href="about.html"><img src="images/bar/about.png"/>about</a></li>
+<li><a href="services.html"><img src="images/bar/serve.png"/>services</a></li>
+<li><a href="price.html"><img src="images/bar/price.png"/>prices</a></li>
+<li><a href="contact.html"><img src="images/bar/mail.png"/>info@oservi.com</a></li>
+<li><a href="http://blog.orservi.com">blog</a></li>
+
+</ul>
+
+</div>
+</div>
+
+
+<div id="body" style="top:60px;">
+<div id="top">
+<b><center>particulars</center> </b>
+<hr />
+</div>
+<div class="form-upload">
+<script type="text/javascript" language="javascript">
+function validate(){
+	var a=document.forms["upload"]["name"].value;
+	var b=document.forms["upload"]["company"].value;
+	var c=document.forms["upload"]["email"].value;
+	var d=document.forms["upload"]["cell"].value;
+	var e=document.forms["upload"]["filetype"].value;
+	var f=document.forms["upload"]["transcription"].value;
+	var g=document.forms["upload"]["quality"].value;
+	var h=document.forms["upload"]["description"].value;
+	var i=document.forms["upload"]["file"].value;
+	if(a==null || a==""||b==null || b==""|| c==null || c==""|| d==null || d==""|| e==null || e==""|| f==null || f==""|| g==null || g==""|| h==null || h==""|| i==null || i==""){
+		alert("please fill all required fields!");
+		
+		return  false;
+	}
+}
+</script>
+<form id="upload-form" name="upload"  action="upload.php" method="post"  enctype="multipart/form-data">
+<table>
+<tr><th colspan="2">fill out the fields</th></tr>
+<tr><td>name</td><td><input type="text" name="name" placeholder="full name"/></td></tr>
+<tr><td>company</td><td><input type="text" name="company" placeholder="company name"/></td></tr>
+<tr><td>email</td><td><input type="email" name="email" placeholder="you@example.com"/></td></tr>
+<tr><td>phone no</td><td><input type="text" name="cell" placeholder="cellphone number with country code..."/></td></tr>
+<tr><td>type of file</td><td><select name="filetype">
+<option value="">--choose transcription type--</option>
+<option value="legal">legal</option>
+<option value="medical">medical</option>
+<option value="Business">business</option>
+<option value="focusgroup">focus grop</option>
+<option value="religious">religious and sermons</option>
+<option value="insurance">insurance</option>
+</select></td></tr>
+<tr><td>type of transcription</td><td><select name="transcription">
+<option value="">--choose transcription type--</option>
+<option value="1">clear file up to 2 speakers</option>
+<option value="2">clear file more than 2 speakers</option>
+<option value="3">dificult file up to 2 speakers</option>
+<option value="4">difficult file more than 2 speakers</option>
+<option value="5">chinese/english transcription up to 2 speakers</option>
+<option value="6">chinese/english transcription more than 2 speakers</option>
+<option value="7">difficult chinese/english transcription up to 2 speakers</option>
+<option value="8">difficult chinese/english transcriptionmore than 2 speakers</option>
+<option value="9">spanish/english up to 2 speakers</option>
+<option value="10">spanish/english more than 2 speakers</option>
+<option value="11">dificult spanish/english up to two speakers</option>
+<option value="12">difficult spanish/english more than 2 speakers</option>
+<option value="13">clear video file up to 2 speakers</option>
+<option value="14">clear video file more than 2 speakers</option>
+<option value="15">difficult video file up to 2 speakers</option>
+<option value="16">difficult video file more than 2 speakers</option>
+<option value="17">text to text transcription</option>
+</select></td></tr>
+<tr><td>noise</td><td><select name="noise">
+<option value="">--choose level of noise--</option>
+<option value="clear">clear</option>
+<option value="noisy">noisy</option>
+
+</select></td></tr>
+<tr><td>quality of audio</td><td><select name="quality">
+<option value="">--choose quality of audio--</option>
+<option value="standard">standard audio</option>
+<option value="low">low quality audio</option>
+
+</select></td></tr>
+<tr><td>description</td><td><textarea class="desc" type="description" name="description" placeholder="description of the job"></textarea></td></tr>
+<tr><td>select file</td><td><input type="file" name="file" id="file"></td></tr>
+
+</table><br/>
+
+<input type="hidden" name="payment" value="paypal">
+
+<input type="submit" value="proceed ->" onclick="return validate()" name="submit" />
+
+
+</form>
+<p>you can visit the <a href="price.html">pricing page</a> to learn more about the prices</p>
+</div>
+</div>
+
+
+
+<div id="footer">
+<div class="links">
+<H1>LINKS</H1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="price.html">Pricing</a></li>
+<li><a href="">Blog</a></li>
+</ul>
+</div>
+<div class="contacts">
+<h1>CONTACTS</h1>
+<a href="contact.html">info@oservi.com</a>
+</div>
+<div class="socials">
+
+</div>
+</div>
+<div id="res-footer">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="price.html">Pricing</a>
+<a href="contact.html">contact</a>
+<a href="">Blog</a>
+
+</div>
+</body>
+</html>
